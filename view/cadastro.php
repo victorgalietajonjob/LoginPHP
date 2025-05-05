@@ -5,23 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Cadastro</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
     <div class="register-container">
         <h2>Cadastro</h2>
         <form action="../controller/CadastroController.php" method="post">
-            <input class="imp-per" name="full-name" type="text" placeholder="Nome" required>
-            <input class="imp-per" name="your-email" type="email" placeholder="email" required>
-            <input class="imp-per" name="your-password" type="password" placeholder="Senha" required>
-            <input class="imp-per" name="your-password" type="password" placeholder="Confirme a Senha" required>
-            <button type="button" onclick="redirect()">Cadastrar</button>
-            <script>
-                function redirect() {
-                    window.location.href = "login.php";
-                }
-            </script>
+            <input class="imp-per" name="fullName" type="name" placeholder="Nome" required>
+            <input class="imp-per" name="email" type="email" placeholder="email" required>
+            <input class="imp-per" name="password" type="password" placeholder="Senha" required>
+            <input class="imp-per" name="confirmPassword" type="password" placeholder="Confirme a Senha" required>
+            <button type="submit">Cadastrar</button>
 
         </form>
 
